@@ -23,5 +23,8 @@ jobs:
       - name: Install pre-commit
         run: pip install pre-commit
 
+      - uses: leafo/gh-actions-lua@v9
+      - uses: leafo/gh-actions-luarocks@v4
+
       - name: Run pre-commit
         run: pre-commit run --all-files
