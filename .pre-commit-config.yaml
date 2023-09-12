@@ -1,0 +1,34 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-toml
+      - id: check-yaml
+      - id: debug-statements
+      - id: check-merge-conflict
+      - id: check-json
+      - id: end-of-file-fixer
+-   repo: https://github.com/timothycrosley/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+-   repo: https://github.com/psf/black
+    rev: 23.9.1
+    hooks:
+      - id: black
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.0.287
+    hooks:
+      - id: ruff
+-   repo: https://github.com/python-poetry/poetry
+    rev: 1.6.0
+    hooks:
+      - id: poetry-check
+-   repo: https://github.com/Koihik/LuaFormatter
+    rev: 29afe1046ad015de96ffdb6d361a21882356e801
+    hooks:
+      - id: luaformatter
+-   repo: https://github.com/lunarmodules/luacheck
+    rev: v1.1.1
+    hooks:
+      - id: luacheck
