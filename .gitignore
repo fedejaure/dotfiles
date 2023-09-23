@@ -161,3 +161,7 @@ cython_debug/
 
 # Macos
 .DS_Store
+
+# Lua environments
+.lua
+.luarocks
