@@ -44,52 +44,52 @@ battery_color = '#D83F31'
 
 # Directory
 [directory]
-style = "bg:directory_color"
-format = "[ $path ]($style)"
+style = 'bg:directory_color'
+format = '[ $path ]($style)'
 truncation_length = 1
 
 # Git
 [git_branch]
-symbol = ""
-style = "bg:git_color"
+symbol = ''
+style = 'bg:git_color'
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:git_color fg:bold red"
+style = 'bg:git_color fg:bold red'
 format = '[$all_status$ahead_behind ]($style)'
 
 # Langs
 [python]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ ${symbol}${pyenv_prefix}(${version} )(\($virtualenv\)) ]($style)'
 
 [terraform]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ $symbol$workspace ]($style)'
 
 [rust]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ $symbol($version) ]($style)'
 
 [dart]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ $symbol($version) ]($style)'
 
 [golang]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ $symbol($version )]($style)'
 
 [lua]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ $symbol($version )]($style)'
 
 [nodejs]
-style = "bg:lang_color"
+style = 'bg:lang_color'
 format = '[ $symbol($version )]($style)'
 
 # Package Version
 [package]
-style = "bg:package_color"
+style = 'bg:package_color'
 format = '[ $symbol$version ]($style)'
 
 # Battery
@@ -97,7 +97,7 @@ format = '[ $symbol$version ]($style)'
 full_symbol = '󰁹'
 charging_symbol = '󰂄'
 discharging_symbol = '󰂃'
-format = "[ $symbol $percentage ]($style)"
+format = '[ $symbol $percentage ]($style)'
 
 [[battery.display]]
 threshold = 30
@@ -112,6 +112,6 @@ format = '[ 󰔟 $duration ]($style)'
 # Time
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:time_color"
+time_format = '%R' # Hour:Minute Format
+style = 'bg:time_color'
 format = '[  $time ]($style)'
