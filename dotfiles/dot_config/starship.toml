@@ -1,0 +1,117 @@
+format = """
+[](directory_color)\
+$directory\
+[](fg:directory_color bg:git_color)\
+$git_branch\
+$git_status\
+[](fg:git_color bg:lang_color)\
+$python\
+$terraform\
+$rust\
+$dart\
+$golang\
+$lua\
+$nodejs\
+[](fg:lang_color bg:package_color)\
+$package\
+[](fg:package_color)\
+$fill\
+[](fg:battery_color)\
+$battery\
+[](bg:battery_color fg:cmd_duration_color)\
+$cmd_duration\
+[](bg:cmd_duration_color fg:time_color)\
+$time\
+[](fg:time_color)\
+\n$character\
+"""
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Set 'retro' as custom color palette
+palette = 'retro'
+
+# Define custom colors
+[palettes.retro]
+directory_color = '#1D5B79'
+git_color = '#468B97'
+lang_color = '#EF6262'
+package_color = '#EE9322'
+time_color = '#219C90'
+cmd_duration_color = '#EA906C'
+battery_color = '#D83F31'
+
+# Directory
+[directory]
+style = "bg:directory_color"
+format = "[ $path ]($style)"
+truncation_length = 1
+
+# Git
+[git_branch]
+symbol = ""
+style = "bg:git_color"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:git_color fg:bold red"
+format = '[$all_status$ahead_behind ]($style)'
+
+# Langs
+[python]
+style = "bg:lang_color"
+format = '[ ${symbol}${pyenv_prefix}(${version} )(\($virtualenv\)) ]($style)'
+
+[terraform]
+style = "bg:lang_color"
+format = '[ $symbol$workspace ]($style)'
+
+[rust]
+style = "bg:lang_color"
+format = '[ $symbol($version) ]($style)'
+
+[dart]
+style = "bg:lang_color"
+format = '[ $symbol($version) ]($style)'
+
+[golang]
+style = "bg:lang_color"
+format = '[ $symbol($version )]($style)'
+
+[lua]
+style = "bg:lang_color"
+format = '[ $symbol($version )]($style)'
+
+[nodejs]
+style = "bg:lang_color"
+format = '[ $symbol($version )]($style)'
+
+# Package Version
+[package]
+style = "bg:package_color"
+format = '[ $symbol$version ]($style)'
+
+# Battery
+[battery]
+full_symbol = '󰁹'
+charging_symbol = '󰂄'
+discharging_symbol = '󰂃'
+format = "[ $symbol $percentage ]($style)"
+
+[[battery.display]]
+threshold = 30
+discharging_symbol = '󰁼'
+style = 'bg:battery_color'
+
+# Cmd Duration
+[cmd_duration]
+style = 'bg:cmd_duration_color'
+format = '[ 󰔟 $duration ]($style)'
+
+# Time
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:time_color"
+format = '[  $time ]($style)'

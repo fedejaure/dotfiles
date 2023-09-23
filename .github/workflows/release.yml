@@ -6,7 +6,7 @@ on:
     tags:
       - 'v*'
 
-jobs:  
+jobs:
   github_release:
     name: Create Github Release
     runs-on: ubuntu-latest
