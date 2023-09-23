@@ -60,7 +60,7 @@ select = [
   "S",  # flake8-bandit
   "BLE",  # flake8-blind-except
   "B",  # flake8-bugbear
-  "A",  # flake8-builtins  
+  "A",  # flake8-builtins
   "G",  # flake8-logging-format
   "ERA",  # eradicate
   "ISC",  # flake8-implicit-str-concat
