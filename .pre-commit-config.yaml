@@ -15,11 +15,11 @@ repos:
     hooks:
       - id: isort
 -   repo: https://github.com/psf/black
-    rev: 23.12.1
+    rev: 24.1.1
     hooks:
       - id: black
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.11
+    rev: v0.2.1
     hooks:
       - id: ruff
 -   repo: https://github.com/python-poetry/poetry
@@ -27,7 +27,7 @@ repos:
     hooks:
       - id: poetry-check
 -   repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v0.19.1
+    rev: v0.20.0
     hooks:
       - id: stylua
 -   repo: https://github.com/lunarmodules/luacheck
