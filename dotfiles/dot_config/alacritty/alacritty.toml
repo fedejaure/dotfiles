@@ -24,7 +24,7 @@ family = "Terminess Nerd Font Mono"
 style = "Regular"
 
 [scrolling]
-history = 10000
+history = 30000
 
 [shell]
 args = ["-l", "-i"]
