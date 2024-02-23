@@ -1,0 +1,41 @@
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 18
+
+[font.bold]
+family = "Terminess Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Terminess Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Terminess Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Terminess Nerd Font Mono"
+style = "Regular"
+
+[scrolling]
+history = 10000
+
+[shell]
+args = ["-l", "-i"]
+program = "/opt/homebrew/bin/fish"
+
+[window]
+dynamic_padding = true
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 10
+y = 10
