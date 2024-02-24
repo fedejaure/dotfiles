@@ -2,6 +2,7 @@
 
 # Add Homebrew binaries to the PATH
 fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
 
 # Add local binaries to the PATH
 fish_add_path $HOME/.local/bin
