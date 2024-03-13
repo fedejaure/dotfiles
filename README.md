@@ -11,14 +11,25 @@
 
 </div>
 
-My Personal dotfiles, managed with [chezmoi].
+My Personal dotfiles 👨‍💻, managed with [chezmoi].
 
 * GitHub repo: <https://github.com/fedejaure/dotfiles.git>
 * Free software: MIT license
 
 ## 🚀 Features
 
-TODO
+My dotfiles include configurations for various tools and applications, such as:
+
+* [Alacritty][alacritty]: A modern terminal emulator with extensive customization options.
+* [Fish][fish]: A smart and user-friendly command-line shell.
+* [Starship][starship]: A minimal, blazing-fast, and customizable prompt for any shell.
+* [tmux]: A terminal multiplexer with plugins for enhanced functionality.
+    * [tpm]: Tmux Plugin Manager.
+    * [tmux-sensible]: A set of tmux options that should be acceptable to everyone.
+    * [catppuccin]: Soothing pastel theme for Tmux.
+* [NeoVim][neovim]: A hyperextensible Vim-based text editor with modern plugin management.
+    * 💤[lazy.nvim]: A modern plugin manager for [NeoVim][neovim].
+    * ⍺[alpha-nvim]: A fast and fully programmable greeter for [NeoVim][neovim].
 
 ## ⚡️ Quickstart
 
@@ -33,3 +44,13 @@ chezmoi init --apply fedejaure
 > ```
 
 [chezmoi]: https://chezmoi.io
+[alacritty]: https://alacritty.org
+[fish]: https://fishshell.com
+[starship]: https://starship.rs
+[tmux]: https://github.com/tmux/tmux
+[tpm]: https://github.com/tmux-plugins/tpm
+[tmux-sensible]: https://github.com/tmux-plugins/tmux-sensible
+[catppuccin]: https://github.com/catppuccin/tmux
+[neovim]: https://neovim.io
+[lazy.nvim]: https://github.com/folke/lazy.nvim
+[alpha-nvim]: https://github.com/goolord/alpha-nvim
