@@ -41,15 +41,14 @@ mypy = "^1.11.0"
 
 [tool.ruff]
 target-version = "py311"
-show-source = true
+output-format = "full"
 line-length = 99
 fix = true
-unfixable = [
-  "ERA",  # Don't remove commented-out code
-]
 extend-exclude = [
     "docs/*",
 ]
+
+[tool.ruff.lint]
 select = [
   "E", "F", "W",  # flake8
   "C",  # mccabe
@@ -67,11 +66,14 @@ select = [
   "RUF",  # Ruff-specific rules
 ]
 ignore = ["ANN101"]
+unfixable = [
+  "ERA",  # Don't remove commented-out code
+]
 
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 max-complexity = 10
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "google"
 
 [tool.isort]
