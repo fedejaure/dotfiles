@@ -37,7 +37,7 @@ ruff = "^0.9.9"
 safety = "^3.2.14"
 
 [tool.poetry.group.typing.dependencies]
-mypy = "^1.14.1"
+mypy = "^1.15.0"
 
 [tool.ruff]
 target-version = "py311"
