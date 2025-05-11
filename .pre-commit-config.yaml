@@ -19,15 +19,15 @@ repos:
     hooks:
       - id: black
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.11.4
+    rev: v0.11.9
     hooks:
       - id: ruff
 -   repo: https://github.com/python-poetry/poetry
-    rev: 2.1.2
+    rev: 2.1.3
     hooks:
       - id: poetry-check
 -   repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v2.0.2
+    rev: v2.1.0
     hooks:
       - id: stylua
 -   repo: https://github.com/lunarmodules/luacheck
