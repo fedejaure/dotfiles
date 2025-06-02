@@ -1,3 +1,4 @@
+[general]
 live_config_reload = true
 
 [env]
@@ -26,7 +27,7 @@ style = "Regular"
 [scrolling]
 history = 30000
 
-[shell]
+[terminal.shell]
 args = ["-l", "-i"]
 program = "/opt/homebrew/bin/fish"
 
@@ -40,3 +41,5 @@ lines = 0
 [window.padding]
 x = 10
 y = 10
+
+[terminal]

@@ -16,6 +16,7 @@ classifiers=[
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
 ]
+package-mode = false
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/fedejaure/dotfiles/issues"
