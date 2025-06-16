@@ -35,7 +35,7 @@ black = "^25.1.0"
 ruff = "^0.11.13"
 
 [tool.poetry.group.security.dependencies]
-safety = "^3.2.14"
+safety = "^3.5.2"
 
 [tool.poetry.group.typing.dependencies]
 mypy = "^1.16.0"
