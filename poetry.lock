@@ -40,7 +40,7 @@ version = "1.6.4"
 description = "The ultimate Python library in building OAuth and OpenID Connect servers and clients."
 optional = false
 python-versions = ">=3.9"
-groups = ["dev", "security"]
+groups = ["security"]
 files = [
     {file = "authlib-1.6.4-py2.py3-none-any.whl", hash = "sha256:39313d2a2caac3ecf6d8f95fbebdfd30ae6ea6ae6a6db794d976405fdd9aa796"},
     {file = "authlib-1.6.4.tar.gz", hash = "sha256:104b0442a43061dc8bc23b133d1d06a2b0a9c2e3e33f34c4338929e816287649"},
@@ -124,7 +124,7 @@ version = "1.16.0"
 description = "Foreign Function Interface for Python calling C code."
 optional = false
 python-versions = ">=3.8"
-groups = ["dev", "security"]
+groups = ["security"]
 markers = "platform_python_implementation != \"PyPy\""
 files = [
     {file = "cffi-1.16.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:6b3d6606d369fc1da4fd8c357d026317fbb9c9b75d36dc16e90e84c26854b088"},
@@ -315,7 +315,7 @@ version = "44.0.1"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
 optional = false
 python-versions = "!=3.9.0,!=3.9.1,>=3.7"
-groups = ["dev", "security"]
+groups = ["security"]
 files = [
     {file = "cryptography-44.0.1-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:bf688f615c29bfe9dfc44312ca470989279f0e94bb9f631f85e3459af8efc009"},
     {file = "cryptography-44.0.1-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:dd7c7e2d71d908dc0f8d2027e1604102140d84b155e658c20e8ad1304317691f"},
@@ -894,7 +894,7 @@ version = "2.21"
 description = "C parser in Python"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-groups = ["dev", "security"]
+groups = ["security"]
 markers = "platform_python_implementation != \"PyPy\""
 files = [
     {file = "pycparser-2.21-py2.py3-none-any.whl", hash = "sha256:8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"},
@@ -1344,31 +1344,31 @@ files = [
 
 [[package]]
 name = "safety"
-version = "3.6.0"
+version = "3.6.2"
 description = "Scan dependencies for known vulnerabilities and licenses."
 optional = false
 python-versions = ">=3.8"
 groups = ["security"]
 files = [
-    {file = "safety-3.6.0-py3-none-any.whl", hash = "sha256:9cddbfd7a578b35e4d29df4fb6e3808425ed792a09d81400a5b7f4b4535ef666"},
-    {file = "safety-3.6.0.tar.gz", hash = "sha256:a820f827699f83d3d5c2faab24c0ac4d094911931503180847d97942c0a6f7e3"},
+    {file = "safety-3.6.2-py3-none-any.whl", hash = "sha256:754f8d6068d1504503b0346cbd3cb0e67015d2abc1d842f3a4e4b662cb4f44ec"},
+    {file = "safety-3.6.2.tar.gz", hash = "sha256:2e148cd9a4ad2e387d2c142878b7b5a3a9cb9e6538167043faa1ba7023a032be"},
 ]
 
 [package.dependencies]
 authlib = ">=1.2.0"
 click = ">=8.0.2"
 dparse = ">=0.6.4"
-filelock = ">=3.16.1,<3.17.0"
+filelock = ">=3.16.1,<4.0"
 httpx = "*"
 jinja2 = ">=3.1.0"
 marshmallow = ">=3.15.0"
 nltk = ">=3.9"
 packaging = ">=21.0"
-psutil = ">=6.1.0,<6.2.0"
-pydantic = ">=2.6.0,<2.10.0"
+psutil = ">=6.1.0,<8.0"
+pydantic = ">=2.6.0"
 requests = "*"
 ruamel-yaml = ">=0.17.21"
-safety-schemas = "0.0.14"
+safety-schemas = "0.0.16"
 setuptools = ">=65.5.1"
 tenacity = "*"
 tomlkit = "*"
@@ -1382,20 +1382,20 @@ spdx = ["spdx-tools (>=0.8.2)"]
 
 [[package]]
 name = "safety-schemas"
-version = "0.0.14"
+version = "0.0.16"
 description = "Schemas for Safety tools"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 groups = ["security"]
 files = [
-    {file = "safety_schemas-0.0.14-py3-none-any.whl", hash = "sha256:0bf6fc4aa5e474651b714cc9e427c862792946bf052b61d5c7bec4eac4c0f254"},
-    {file = "safety_schemas-0.0.14.tar.gz", hash = "sha256:49953f7a59e919572be25595a8946f9cbbcd2066fe3e160c9467d9d1d6d7af6a"},
+    {file = "safety_schemas-0.0.16-py3-none-any.whl", hash = "sha256:6760515d3fd1e6535b251cd73014bd431d12fe0bfb8b6e8880a9379b5ab7aa44"},
+    {file = "safety_schemas-0.0.16.tar.gz", hash = "sha256:3bb04d11bd4b5cc79f9fa183c658a6a8cf827a9ceec443a5ffa6eed38a50a24e"},
 ]
 
 [package.dependencies]
 dparse = ">=0.6.4"
 packaging = ">=21.0"
-pydantic = ">=2.6.0,<2.10.0"
+pydantic = ">=2.6.0"
 ruamel-yaml = ">=0.17.21"
 typing-extensions = ">=4.7.1"
 
@@ -1566,4 +1566,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.1"
 python-versions = "<3.12,>=3.11"
-content-hash = "80c3dee80ff3ab4eec3dc217bb18995297caca1b8fc3ee27e4cbe3b86777e87c"
+content-hash = "980f0621778a95a1dab715aae1e8a05061fb7e107906e708f070f3412a0e74a7"
