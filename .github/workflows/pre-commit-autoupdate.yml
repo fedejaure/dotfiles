@@ -18,10 +18,10 @@ jobs:
         with:
           ref: main
 
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v6.2.0
         with:
-          python-version: 3.11
+          python-version-file: '.python-version'
 
       - name: Install pre-commit
         run: pip install pre-commit
