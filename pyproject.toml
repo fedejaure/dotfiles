@@ -28,7 +28,7 @@ bump2version = "^1.0.1"
 [tool.poetry.group.lint.dependencies]
 isort = "^8.0.1"
 black = "^26.5.1"
-ruff = "^0.15.15"
+ruff = "^0.15.20"
 
 [tool.poetry.group.security.dependencies]
 safety = "^3.8.1"
